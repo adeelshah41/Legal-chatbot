@@ -2,6 +2,22 @@
 
 AI-powered legal assistant using **FastAPI**, **LangChain**, **FAISS**, and **OpenAI** with RAG over region-specific Pakistani laws.
 
+
+## 🖼️ Demo
+
+You can also check the demo video in this link: https://drive.google.com/file/d/1zWbGguFmQroI9U3JJSIp_2pCIhgcBrhy/view?usp=sharing
+
+<p align="center">
+  <img src="homepage.png" alt="Homepage Demo" width="500"/>
+</p>
+
+<p align="center">
+  <img src="q1.png" alt="Example Question 1" width="500"/>
+  <img src="q2.png" alt="Example Question 2" width="500"/>
+</p>
+
+
+
 ---
 
 ## 📦 Project Structure (relevant files)
