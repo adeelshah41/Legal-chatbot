@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Assistant Pakistan - قانونی مشیر</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Urdu:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="title-section">
+                        <h1>Legal Assistant Pakistan</h1>
+                        <p class="subtitle">قانونی مشیر پاکستان</p>
+                    </div>
+                </div>
+                <div class="flag-pattern"></div>
+            </div>
+        </header>
+
+        <!-- Main Chat Interface -->
+        <main class="chat-container">
+            <div class="chat-header">
+                <div class="assistant-info">
+                    <div class="assistant-avatar">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="assistant-details">
+                        <h3>AI Legal Assistant</h3>
+                        <p class="status"><span class="status-dot"></span> Online - آن لائن</p>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn" title="New Chat">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="action-btn" title="Settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-text">
+                            <p>السلام علیکم! Welcome to Legal Assistant Pakistan.</p>
+                            <p>I'm here to help you with Pakistani legal matters including:</p>
+                            <ul>
+                                <li>Constitutional Law - آئینی قانون</li>
+                                <li>Civil Law - دیوانی قانون</li>
+                                <li>Criminal Law - فوجداری قانون</li>
+                                <li>Family Law - خاندانی قانون</li>
+                                <li>Business Law - کاروباری قانون</li>
+                            </ul>
+                            <p>How can I assist you today?</p>
+                        </div>
+                        <div class="message-time">Just now</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <div class="quick-action-buttons">
+                    <button class="quick-btn" onclick="sendQuickMessage('What are my rights under Pakistani law?')">
+                        <i class="fas fa-user-shield"></i>
+                        <span>Legal Rights</span>
+                    </button>
+                    <button class="quick-btn" onclick="sendQuickMessage('How do I file a case in Pakistani courts?')">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Court Filing</span>
+                    </button>
+                    <button class="quick-btn" onclick="sendQuickMessage('What are the divorce laws in Pakistan?')">
+                        <i class="fas fa-heart-broken"></i>
+                        <span>Family Law</span>
+                    </button>
+                    <button class="quick-btn" onclick="sendQuickMessage('How to register a business in Pakistan?')">
+                        <i class="fas fa-building"></i>
+                        <span>Business Registration</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <button class="attach-btn" title="Attach Document">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <input type="text" id="messageInput" placeholder="Type your legal question here... یہاں اپنا قانونی سوال ٹائپ کریں..." />
+                    <button class="language-toggle" title="Toggle Language" onclick="toggleLanguage()">
+                        <i class="fas fa-language"></i>
+                    </button>
+                    <button class="send-btn" onclick="sendMessage()" title="Send Message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Disclaimer: This AI provides general legal information only. Always consult with a qualified Pakistani lawyer for specific legal advice.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
